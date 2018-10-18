@@ -54,14 +54,6 @@
     <router-view :class="$style.content" />
 
     <vue-footer />
-
-    <vue-cookie-consent
-      current-version="1.0.0"
-      :cookie-consent-version="cookieConsentVersion"
-      :set-cookie-consent-version="setCookieConsentVersion">
-      This is a cookie consent component which shows the cookie consent every time you change the version of the
-      consent.
-    </vue-cookie-consent>
   </div>
 </template>
 
@@ -72,7 +64,6 @@
   import VueGridItem                from '../../shared/components/VueGridItem/VueGridItem.vue';
   import VueFooter                  from '../../shared/components/VueFooter/VueFooter.vue';
   import VueNotificationStack       from '../../shared/components/VueNotificationStack/VueNotificationStack.vue';
-  import VueCookieConsent           from '../../shared/components/VueCookieConsent/VueCookieConsent.vue';
   import VueIconBook                from '../../shared/components/icons/VueIconBook/VueIconBook.vue';
   import VueIconHashtag             from '../../shared/components/icons/VueIconHashtag/VueIconHashtag.vue';
   import VueIconPuzzlePiece         from '../../shared/components/icons/VueIconPuzzlePiece/VueIconPuzzlePiece.vue';
@@ -88,7 +79,6 @@
       VueIconPuzzlePiece,
       VueIconHashtag,
       VueIconBook,
-      VueCookieConsent,
       VueNavBar,
       VueGrid,
       VueGridItem,

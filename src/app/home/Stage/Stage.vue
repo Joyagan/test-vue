@@ -7,18 +7,13 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item class="vueGridItem">
-          <h1 :class="$style.title">vue-starter</h1>
+          <h1 :class="$style.title">Tsipiripo</h1>
           <div :class="$style.subTitle">
             {{
             $t('App.core.description' /* A flexible, scalable, opinionated boilerplate for production-ready PWAs with
             focus on performance, development speed, and best practices */)
             }}
           </div>
-
-          <a :class="$style.github" href="https://github.com/devCrossNet/vue-starter" target="_blank" rel="noopener"
-             aria-label="github repository">
-            <vue-icon-github />
-          </a>
         </vue-grid-item>
       </vue-grid-row>
     </vue-grid>
@@ -30,10 +25,9 @@
   import VueGrid             from '../../shared/components/VueGrid/VueGrid.vue';
   import VueGridRow          from '../../shared/components/VueGridRow/VueGridRow.vue';
   import VueGridItem         from '../../shared/components/VueGridItem/VueGridItem.vue';
-  import VueIconGithub       from '../../shared/components/icons/VueIconGithub/VueIconGithub.vue';
 
   export default {
-    components: { VueIconGithub, VueGridItem, VueGridRow, VueGrid },
+    components: { VueGridItem, VueGridRow, VueGrid },
     props:      {
       disableParticles: {
         type:     Boolean,

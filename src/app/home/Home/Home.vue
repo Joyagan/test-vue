@@ -2,9 +2,8 @@
   <div :class="$style.home">
     <stage
       :disable-particles="disableParticles" />
-    <dev-ex />
-    <enterprise-ready />
-    <user-experience />
+    <services />
+    <products />
     <quick-start />
   </div>
 </template>
@@ -12,8 +11,8 @@
 <script lang="ts">
   import { mapState }    from 'vuex';
   import Stage           from '../Stage/Stage.vue';
-  import DevEx           from '../DevEx/DevEx.vue';
-  import EnterpriseReady from '../EnterpriseReady/EnterpriseReady.vue';
+  import Services        from  '../Services/Services.vue';
+  import Products        from '../Products/Products.vue';
   import UserExperience  from '../UserExperience/UserExperience.vue';
   import QuickStart      from '../QuickStart/QuickStart.vue';
   import { IState }      from '../../state';
@@ -65,9 +64,9 @@
       ],
     },
     components: {
+      Products,
+      Services,
       Stage,
-      DevEx,
-      EnterpriseReady,
       UserExperience,
       QuickStart,
     },

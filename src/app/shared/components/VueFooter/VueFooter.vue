@@ -3,25 +3,53 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item>
-          <small>&copy; Copyright {{year}} Johannes Werner</small>
+          <div>
+            <h4 class="m-0 p-b-6">Επικοινωνία</h4>
+
+            <p class="m-0 p-y-1"><strong>Τηλέφωνο:</strong></p>
+            <p class="m-0 p-b-1">210 5548113</p>
+
+            <p class="m-0 p-y-1"><strong>Email:</strong></p>
+            <p class="m-0 p-b-1"><a href="tsipiripobebe@gmail.com">tsipiripobebe@gmail.com</a></p>
+
+            <p class="m-0 p-y-1"><strong>Διεύθυνση:</strong></p>
+            <p class="m-0 p-b-1">Αγίου Δημητρίου 19, Ασπρόπυργος</p>
+          </div>
         </vue-grid-item>
 
         <vue-grid-item>
-          <a href="https://github.com/devCrossNet" target="_blank" rel="noopener" aria-label="github profile">
-            <vue-icon-github-alt />
-          </a>
-          <a href="https://twitter.com/_jwerner_" target="_blank" rel="noopener" aria-label="twitter profile">
-            <vue-icon-twitter-square />
+          <div>
+            <h4 class="m-0 p-b-6">Σύνδεσμοι</h4>
+
+            <div>
+              <a class="m-r-2"  target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="m-r-2"  target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="m-r-2" target="_blank">
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
+            <br>
+            <p class="m-t-5"> &copy; {{year}} Tsipiripo</p>
+            <br>
+          </div>
+        </vue-grid-item>
+      </vue-grid-row>
+
+
+      <vue-grid-row>
+        <vue-grid-item>
+          <a href="https://stavrosliaskos.com" target="_blank">
+            <!--
+                    <img class="pull-left mr-15 relative" src="https://cosmicjs.com/images/logo.svg" width="28" height="28">
+            -->
+            <span style="margin-left:10px; color: #666">Proudly powered by Stavros Liaskos</span>
           </a>
         </vue-grid-item>
 
-        <vue-grid-item>
-          <small>
-            <a href="https://github.com/devCrossNet/vue-starter/blob/master/LICENSE" target="_blank" rel="noopener">
-              MIT License
-            </a>
-          </small>
-        </vue-grid-item>
       </vue-grid-row>
     </vue-grid>
   </div>
